@@ -193,8 +193,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7704722778737649297}
   - component: {fileID: 1767726676780420702}
-  - component: {fileID: 1767726676780420703}
   - component: {fileID: 5977276388383255663}
+  - component: {fileID: 1767726676780420703}
   m_Layer: 0
   m_Name: Rocketship
   m_TagString: Untagged
@@ -232,26 +232,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767726676780420701}
   serializedVersion: 2
-  m_Mass: 0.1
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 48
+  m_Constraints: 56
   m_CollisionDetection: 0
---- !u!114 &1767726676780420703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767726676780420701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6cfc206124254b20ae83b300552929a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &5977276388383255663
 AudioSource:
   m_ObjectHideFlags: 0
@@ -263,10 +251,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d4acd21a445d14b449a3c7393616a9b6, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -348,6 +336,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1767726676780420703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767726676780420701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cfc206124254b20ae83b300552929a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 100
+  thrust: 1000
 --- !u!1 &2527141762476565782
 GameObject:
   m_ObjectHideFlags: 0
