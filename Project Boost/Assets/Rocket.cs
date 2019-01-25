@@ -25,6 +25,19 @@ public class Rocket : MonoBehaviour
         Rotate();
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "friendly":
+                print("do noting");
+                break;
+            default:
+                print("DIE");
+                break;
+        }
+    }
+
     private void Thrust()
     {
         var boost = Vector3.up * thrust * Time.deltaTime;
