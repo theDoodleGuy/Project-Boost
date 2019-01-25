@@ -490,8 +490,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767726676780420702, guid: 5529c6e1f49f7487585c2051eb5aec70,
         type: 3}
-      propertyPath: m_Constraints
-      value: 48
+      propertyPath: m_Mass
+      value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5977276388383255663, guid: 5529c6e1f49f7487585c2051eb5aec70,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977276388383255663, guid: 5529c6e1f49f7487585c2051eb5aec70,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1767726676780420703, guid: 5529c6e1f49f7487585c2051eb5aec70, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5529c6e1f49f7487585c2051eb5aec70, type: 3}
